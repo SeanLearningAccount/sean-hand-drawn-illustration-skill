@@ -1,10 +1,10 @@
-# Sean Hand-Drawn Illustration Skill / Sean 手绘插画 Skill
+# Sean Hand-Drawn Illustration Skill
 
 Two Codex skills for generating white-background, literary magazine cover style hand-drawn illustrations from a topic.
 
 这是一组 Codex skill，用来把一个主题转译成白底、文学杂志封面感、主观地理式的手绘插画。
 
-## Skills / Skill 文件
+## Skills
 
 | Skill | Folder | Language |
 |---|---|---|
@@ -15,7 +15,7 @@ Both versions follow the same core logic. The Chinese version was tested first, 
 
 中英文版本使用同一套核心逻辑。中文版先完成测试，英文版根据已验证的中文版同步更新。
 
-## What It Does / 它做什么
+## What It Does
 
 The skill turns a topic into a subjective geography illustration:
 
@@ -35,7 +35,7 @@ The visual style is white paper, black / gray pencil linework, sparse colored-pe
 
 视觉风格是白纸底、黑灰铅笔线稿、少量彩铅锚点，以及文学杂志封面感的大标题。
 
-## Tested Environment / 测试环境
+## Tested Environment
 
 These skills were tested in the Codex app using Codex's built-in image generation workflow.
 
@@ -45,7 +45,7 @@ The exact image backend may vary by product environment. In my tests, the workfl
 
 不同产品环境里的底层图片模型可能会变化。我的测试环境表现接近 OpenAI 当前图片生成体验中常被称为 `image-2` 的流程，但本仓库不把某个模型名写成硬依赖。如果你的 Codex 或 ChatGPT 环境暴露的是其他图片生成模型，可以继续使用同一份 skill 指令。
 
-## Installation / 安装
+## Installation
 
 Copy the skill folder you want into your Codex skills directory.
 
@@ -69,7 +69,7 @@ Restart Codex after installing or updating a skill.
 
 安装或更新 skill 后，需要重启 Codex。
 
-## Inputs / 输入
+## Inputs
 
 Required:
 
@@ -96,7 +96,7 @@ In my tests, I usually provided only the topic and aspect ratio. A topic alone a
 
 我的测试通常只提供主题和画面比例。只给主题也可以，skill 会自行推断观察主体、年代、反差和空间结构。
 
-## Default Workflow / 默认流程
+## Default Workflow
 
 By default, the skill internally completes Part A-D, then uses Part D to generate the image directly.
 
@@ -120,7 +120,7 @@ Part C is a pre-prompt plan review. It reviews the plan already established in P
 
 Part C 是写 Part D 前的方案预检。它检查 Part A 和 Part B 已经确定的方案，不检查尚未写出的 Part D 原文。
 
-## Usage Examples / 使用示例
+## Usage Examples
 
 Default direct generation:
 
@@ -172,7 +172,7 @@ Some image-generation runtimes do not allow follow-up text immediately after ima
 
 有些图片生成环境在生成图片后不允许立刻继续发送文字。这种情况下，可以在后续消息里再要求查看 Part A-D。
 
-## Example Images / 示例图片
+## Example Images
 
 Example images generated during testing:
 
@@ -218,7 +218,7 @@ Example images are AI-generated test outputs and are included only to demonstrat
 
 示例图片为 AI 生成的测试输出，仅用于展示 skill 效果，不代表任何官方作品或品牌资产。
 
-## Design Guardrails / 设计约束
+## Design Guardrails
 
 The current version includes guardrails for:
 
@@ -238,7 +238,7 @@ The current version includes guardrails for:
 - 除非确实最适合主题，否则避免重复“左右前景建筑 + 中央道路 / 河流 + 远岸入口 + 远方地平线”模板。
 - 避免墙面文字、图注线、UI 面板、菜单、价格表、排行榜和品牌关系图。
 
-## Notes / 注意
+## Notes
 
 These skills are prompt and workflow documents, not deterministic renderers. Results depend on the image model, runtime, prompt interpretation, and session context.
 
@@ -254,7 +254,7 @@ For testing, both same-conversation and fresh-conversation workflows are useful:
 - 同窗口：我的测试中表现正常。我连续测试过 3 个现代主题，没有明显模板重复。
 - 新窗口：如果你想减少会话惯性，或者连续几张图开始变得相似，可以新开窗口。
 
-## License / 许可证
+## License
 
 MIT License.
 
