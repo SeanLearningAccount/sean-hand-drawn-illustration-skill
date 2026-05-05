@@ -76,7 +76,12 @@ Required:
 必填：
 
 ```text
-Topic / 主题: [one-sentence topic / 一句话主题]
+Topic: [one-sentence topic]
+```
+OR
+
+```text
+主题: [一句话主题]
 ```
 
 Optional:
@@ -84,12 +89,22 @@ Optional:
 可选：
 
 ```text
-Observer / 观察主体: [who is looking at this world / 谁在看这个世界]
-Contrast / 想表达的反差: [what is clear nearby, what is vague far away / 近处清楚什么，远处模糊什么]
-Use / 输出用途: [social cover, article image, magazine cover, poster / 小红书封面、文章配图、杂志封面、海报]
-Required text / 必须出现的文字: [title and a few map place names / 标题和少量地图地名]
-Avoid / 必须避免的内容: [elements, styles, colors, or content to avoid / 不想出现的元素、风格、颜色]
-Aspect ratio / 画面比例: [4:5, 3:4, 16:9, etc.]
+Observer: [who is looking at this world]
+Contrast: [what is clear nearby, what is vague far away]
+Use : [social cover, article image, magazine cover, poster]
+Required text: [title and a few map place names]
+Avoid: [elements, styles, colors, or content to avoid]
+Aspect ratio: [4:5, 3:4, 16:9, etc.]
+```
+OR
+
+```text
+观察主体: [谁在看这个世界]
+想表达的反差: [近处清楚什么，远处模糊什么]
+输出用途: [小红书封面、文章配图、杂志封面、海报]
+必须出现的文字: [标题和少量地图地名]
+必须避免的内容: [不想出现的元素、风格、颜色]
+画面比例: [4:5, 3:4, 16:9, etc.]
 ```
 
 In my tests, I usually provided only the topic and aspect ratio. A topic alone also works; the skill will infer the observer, era, contrast, and spatial structure.
